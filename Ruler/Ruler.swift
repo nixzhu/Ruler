@@ -47,16 +47,16 @@ public class Ruler {
         }
         }()
 
-    public enum RulerMeasure {
+    public enum Measure {
         case iPhoneWidths(CGFloat, CGFloat, CGFloat)
         case iPhoneHeights(CGFloat, CGFloat, CGFloat, CGFloat)
         case UniversalWidths(CGFloat, CGFloat, CGFloat, CGFloat)
         case UniversalHeights(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat)
     }
 
-    public class func match(rulerMeasure: RulerMeasure) -> CGFloat {
+    public class func match(measure: Measure) -> CGFloat {
 
-        switch rulerMeasure {
+        switch measure {
 
         case let .iPhoneWidths(classic, bigger, biggerPlus):
             switch screenModel {
