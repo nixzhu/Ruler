@@ -119,7 +119,9 @@ $(SRCROOT)/Carthage/Build/iOS/Ruler.framework
 
 For more information about how to use Carthage, please see its [project page](https://github.com/Carthage/Carthage).
 
+## Contact
 
+NIX [@nixzhu](https://twitter.com/nixzhu)
 
 ## License
 
