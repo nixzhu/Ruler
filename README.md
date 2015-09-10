@@ -9,7 +9,9 @@ In some cases, we need to distinguish between different devices to set UI, but A
 
 ## Requirements
 
-Swift 1.2, iOS 8.0
+Swift 2.0, iOS 8.0
+
+(Project with Swift 1.2 can still use version 0.5, with slightly different API)
 
 ## Example
 
@@ -17,33 +19,59 @@ If we only consider iPhone's width, iPhone 5 has the same width of iPhone 4s, iP
 
 But if we consider full screen size of iPhone, there are four models, because iPhone 5's height is different from iPhone 4s'.
 
-If our app is universal, we need consider iPad, but iPad only has one screen model (in points).
+If our app is universal, we need consider iPad, there are two models (in points).
 
-So all we need consider four cases as follows:
+So all we need consider five cases as follows:
 
 ```swift
-enum Measure {
-    case iPhoneWidths(CGFloat, CGFloat, CGFloat)
-    case iPhoneHeights(CGFloat, CGFloat, CGFloat, CGFloat)
-    case UniversalWidths(CGFloat, CGFloat, CGFloat, CGFloat)
-    case UniversalHeights(CGFloat, CGFloat, CGFloat, CGFloat, CGFloat)
+enum Ruler<T> {
+    case iPhoneHorizontal(T, T, T)
+    case iPhoneVertical(T, T, T, T)
+    case iPad(T, T)
+    case UniversalHorizontal(T, T, T, T, T)
+    case UniversalVertical(T, T, T, T, T, T)
+    
+	//...
 }
 ```
 
-In real world:
+In real world (thanks generics, Ruler can match anything for different sizes of iOS devices):
 
 ```swift
 import Ruler
 ```
 
 ```swift
-let width = Ruler.match(.iPhoneWidths(10, 20, 30))
+// size, off course
 
-let height = Ruler.match(.iPhoneHeights(5, 10, 20, 30))
+let width = Ruler.iPhoneHorizontal(10, 20, 30).value
+let height = Ruler.iPhoneVertical(5, 10, 20, 30).value
 
-let universalWidth = Ruler.match(.UniversalWidths(10, 20, 30, 40))
+// or color
 
-let universalHeight = Ruler.match(.UniversalHeights(5, 10, 20, 30, 40))
+colorView.backgroundColor = Ruler.UniversalVertical(UIColor.blackColor(), UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.yellowColor(), UIColor.purpleColor()).value
+
+// even closures
+
+typealias Greeting = () -> Void
+
+let greeting: Greeting = Ruler.UniversalVertical({
+        print("Hello!")
+    }, {
+        print("Hi!")
+    }, {
+        print("How are you!")
+    }, {
+        print("How do you do!")
+    }, {
+        print("好友不见！")
+    }, {
+        print("你好！")
+}).value
+
+greeting()
+
+// ...
 ```
 
 ## Installation
@@ -67,7 +95,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Ruler', '~> 0.5'
+pod 'Ruler', '~> 0.6'
 ```
 
 Then, run the following command:
@@ -92,7 +120,7 @@ $ brew install carthage
 To integrate Ruler into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "nixzhu/Ruler" >= 0.5
+github "nixzhu/Ruler" >= 0.6
 ```
 
 Then, run the following command to build the Ruler framework:
