@@ -19,8 +19,8 @@ class ViewController: UIViewController {
 
         // set some constraints
 
-        leftMargin.constant = Ruler.UniversalHorizontal(0, 20, 40, 60).value
-        topMargin.constant = Ruler.UniversalVertical(0, 20, 40, 60, 80).value
+        leftMargin.constant = Ruler.UniversalHorizontal(0, 20, 40, 60, 80).value
+        topMargin.constant = Ruler.UniversalVertical(0, 20, 40, 60, 80, 100).value
 
         // other test
 
@@ -30,10 +30,10 @@ class ViewController: UIViewController {
         let height: Int = Ruler.iPhoneVertical(5, 10, 20, 30).value
         print("height = \(height)\n")
 
-        let universalWidth = Ruler.UniversalHorizontal(10, 20, 30, 40).value
+        let universalWidth = Ruler.UniversalHorizontal(10, 20, 30, 40, 60).value
         print("universalWidth = \(universalWidth)\n")
 
-        let universalHeight = Ruler.UniversalVertical(5, 10, 20, 30, 40).value
+        let universalHeight = Ruler.UniversalVertical(5, 10, 20, 30, 40, 60).value
         print("universalHeight = \(universalHeight)\n")
     }
 }

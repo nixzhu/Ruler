@@ -17,7 +17,12 @@ private enum ScreenModel {
     case Classic(ClassicModel)
     case Bigger
     case BiggerPlus
-    case iPad
+
+    enum PadModel {
+        case Normal
+        case Pro
+    }
+    case iPad(PadModel)
 }
 
 private let screenModel: ScreenModel = {
@@ -38,18 +43,20 @@ private let screenModel: ScreenModel = {
         return .BiggerPlus
 
     case 768 * 2, 768:
-        return .iPad
+        return .iPad(.Normal)
 
     default:
-        return .Bigger // Default
+        //return .Bigger // Default
+        return .iPad(.Pro) // TODO: Unknow
     }
     }()
 
 public enum Ruler<T> {
     case iPhoneHorizontal(T, T, T)
     case iPhoneVertical(T, T, T, T)
-    case UniversalHorizontal(T, T, T, T)
-    case UniversalVertical(T, T, T, T, T)
+    case iPad(T, T)
+    case UniversalHorizontal(T, T, T, T, T)
+    case UniversalVertical(T, T, T, T, T, T)
 
     public var value: T {
 
@@ -63,7 +70,7 @@ public enum Ruler<T> {
                 return bigger
             case .BiggerPlus:
                 return biggerPlus
-            case .iPad:
+            default:
                 return biggerPlus
             }
 
@@ -80,11 +87,25 @@ public enum Ruler<T> {
                 return bigger
             case .BiggerPlus:
                 return biggerPlus
-            case .iPad:
+            default:
                 return biggerPlus
             }
 
-        case let .UniversalHorizontal(classic, bigger, biggerPlus, iPad):
+        case let .iPad(normal, pro):
+            switch screenModel {
+            case .iPad(let model):
+
+                switch model {
+                case .Normal:
+                    return normal
+                case .Pro:
+                    return pro
+                }
+            default:
+                return normal
+            }
+
+        case let .UniversalHorizontal(classic, bigger, biggerPlus, iPadNormal, iPadPro):
             switch screenModel {
             case .Classic:
                 return classic
@@ -92,11 +113,16 @@ public enum Ruler<T> {
                 return bigger
             case .BiggerPlus:
                 return biggerPlus
-            case .iPad:
-                return iPad
+            case .iPad(let model):
+                switch model {
+                case .Normal:
+                    return iPadNormal
+                case .Pro:
+                    return iPadPro
+                }
             }
 
-        case let .UniversalVertical(inch35, inch4, bigger, biggerPlus, iPad):
+        case let .UniversalVertical(inch35, inch4, bigger, biggerPlus, iPadNormal, iPadPro):
             switch screenModel {
             case .Classic(let model):
                 switch model {
@@ -109,8 +135,13 @@ public enum Ruler<T> {
                 return bigger
             case .BiggerPlus:
                 return biggerPlus
-            case .iPad:
-                return iPad
+            case .iPad(let model):
+                switch model {
+                case .Normal:
+                    return iPadNormal
+                case .Pro:
+                    return iPadPro
+                }
             }
         }
     }
