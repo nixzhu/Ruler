@@ -1,6 +1,6 @@
 //
 //  Ruler.swift
-//  SizeMatters
+//  Ruler
 //
 //  Created by NIX on 15/7/22.
 //  Copyright (c) 2015年 nixWork. All rights reserved.
@@ -32,26 +32,30 @@ private let screenModel: ScreenModel = {
 
     switch nativeWidth {
 
-    case 320 * 2:
+    case 2 * 320:
         let nativeHeight = screen.nativeBounds.size.height
-        return nativeHeight > (480 * 2) ? .Classic(.Inch4) : .Classic(.Inch35)
+        return nativeHeight > (2 * 480) ? .Classic(.Inch4) : .Classic(.Inch35)
 
-    case 375 * 2:
+    case 2 * 375:
         return .Bigger
 
-    case 414 * 3:
+    case 3 * 414:
         return .BiggerPlus
 
-    case 768 * 2, 768:
+    case 2 * 768, 768:
         return .iPad(.Normal)
 
+    case 2 * 1024:
+        return .iPad(.Pro)
+
     default:
-        //return .Bigger // Default
-        return .iPad(.Pro) // TODO: Unknow
+        print("Warning: Can NOT detect screenModel!")
+        return .Bigger // Default
     }
     }()
 
 public enum Ruler<T> {
+
     case iPhoneHorizontal(T, T, T)
     case iPhoneVertical(T, T, T, T)
     case iPad(T, T)
