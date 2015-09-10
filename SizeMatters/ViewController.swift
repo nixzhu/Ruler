@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
         // other test
 
-        let width = Ruler.match(.iPhoneWidths(10, 20, 30))
+        let width: CGFloat = Ruler.match(.iPhoneWidths(10, 20, 30))
         print("width = \(width)\n")
 
         let height = Ruler.match(.iPhoneHeights(5, 10, 20, 30))
