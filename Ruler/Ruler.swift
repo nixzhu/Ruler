@@ -45,20 +45,17 @@ private let screenModel: ScreenModel = {
     }
     }()
 
-public enum Measure<T> {
-    case iPhoneWidths(T, T, T)
-    case iPhoneHeights(T, T, T, T)
-    case UniversalWidths(T, T, T, T)
-    case UniversalHeights(T, T, T, T, T)
-}
+public enum Ruler<T> {
+    case iPhoneHorizontal(T, T, T)
+    case iPhoneVertical(T, T, T, T)
+    case UniversalHorizontal(T, T, T, T)
+    case UniversalVertical(T, T, T, T, T)
 
-public class Ruler<T> {
+    public var value: T {
 
-    public class func match(measure: Measure<T>) -> T {
+        switch self {
 
-        switch measure {
-
-        case let .iPhoneWidths(classic, bigger, biggerPlus):
+        case let .iPhoneHorizontal(classic, bigger, biggerPlus):
             switch screenModel {
             case .Classic:
                 return classic
@@ -70,7 +67,7 @@ public class Ruler<T> {
                 return biggerPlus
             }
 
-        case let .iPhoneHeights(inch35, inch4, bigger, biggerPlus):
+        case let .iPhoneVertical(inch35, inch4, bigger, biggerPlus):
             switch screenModel {
             case .Classic(let model):
                 switch model {
@@ -87,7 +84,7 @@ public class Ruler<T> {
                 return biggerPlus
             }
 
-        case let .UniversalWidths(classic, bigger, biggerPlus, iPad):
+        case let .UniversalHorizontal(classic, bigger, biggerPlus, iPad):
             switch screenModel {
             case .Classic:
                 return classic
@@ -99,7 +96,7 @@ public class Ruler<T> {
                 return iPad
             }
 
-        case let .UniversalHeights(inch35, inch4, bigger, biggerPlus, iPad):
+        case let .UniversalVertical(inch35, inch4, bigger, biggerPlus, iPad):
             switch screenModel {
             case .Classic(let model):
                 switch model {

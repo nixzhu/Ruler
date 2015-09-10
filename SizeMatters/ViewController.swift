@@ -19,23 +19,22 @@ class ViewController: UIViewController {
 
         // set some constraints
 
-        leftMargin.constant = Ruler.match(.UniversalWidths(0, 20, 40, 60))
-        topMargin.constant = Ruler.match(.UniversalHeights(0, 20, 40, 60, 80))
+        leftMargin.constant = Ruler.UniversalHorizontal(0, 20, 40, 60).value
+        topMargin.constant = Ruler.UniversalVertical(0, 20, 40, 60, 80).value
 
         // other test
 
-        let width: CGFloat = Ruler.match(.iPhoneWidths(10, 20, 30))
+        let width: CGFloat = Ruler.iPhoneHorizontal(10, 20, 30).value
         print("width = \(width)\n")
 
-        let height = Ruler.match(.iPhoneHeights(5, 10, 20, 30))
+        let height: Int = Ruler.iPhoneVertical(5, 10, 20, 30).value
         print("height = \(height)\n")
 
-        let universalWidth = Ruler.match(.UniversalWidths(10, 20, 30, 40))
+        let universalWidth = Ruler.UniversalHorizontal(10, 20, 30, 40).value
         print("universalWidth = \(universalWidth)\n")
 
-        let universalHeight = Ruler.match(.UniversalHeights(5, 10, 20, 30, 40))
+        let universalHeight = Ruler.UniversalVertical(5, 10, 20, 30, 40).value
         print("universalHeight = \(universalHeight)\n")
     }
-
 }
 
