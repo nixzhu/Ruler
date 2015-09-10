@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftMargin: NSLayoutConstraint!
     @IBOutlet weak var topMargin: NSLayoutConstraint!
 
+    @IBOutlet weak var colorView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,17 +26,42 @@ class ViewController: UIViewController {
 
         // other test
 
-        let width: CGFloat = Ruler.iPhoneHorizontal(10, 20, 30).value
+        let width = Ruler.iPhoneHorizontal(10, 20, 30).value
         print("width = \(width)\n")
 
-        let height: Int = Ruler.iPhoneVertical(5, 10, 20, 30).value
+        let height = Ruler.iPhoneVertical(5, 10, 20, 30).value
         print("height = \(height)\n")
+
+        let iPadWidthOrHeight = Ruler.iPad(20, 50).value
+        print("iPadWidthOrHeight = \(iPadWidthOrHeight)\n")
 
         let universalWidth = Ruler.UniversalHorizontal(10, 20, 30, 40, 60).value
         print("universalWidth = \(universalWidth)\n")
 
         let universalHeight = Ruler.UniversalVertical(5, 10, 20, 30, 40, 60).value
         print("universalHeight = \(universalHeight)\n")
+
+        // thanks generics, Ruler can match anything for different sizes of iOS devices, not just the length!
+
+        colorView.backgroundColor = Ruler.UniversalVertical(UIColor.blackColor(), UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.yellowColor(), UIColor.purpleColor()).value
+
+        typealias Greeting = () -> Void
+
+        let greeting: Greeting = Ruler.UniversalVertical({
+                print("Hello!")
+            }, {
+                print("Hi!")
+            }, {
+                print("How are you!")
+            }, {
+                print("How do you do!")
+            }, {
+                print("好友不见！")
+            }, {
+                print("你好！")
+        }).value
+
+        greeting()
     }
 }
 
