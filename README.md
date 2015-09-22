@@ -64,7 +64,7 @@ let greeting: Greeting = Ruler.UniversalVertical({
     }, {
         print("How do you do!")
     }, {
-        print("好友不见！")
+        print("好久不见！")
     }, {
         print("你好！")
 }).value
