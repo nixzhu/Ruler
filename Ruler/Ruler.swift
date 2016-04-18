@@ -39,7 +39,7 @@ private let screenModel: ScreenModel = {
     case 2 * 375:
         return .Bigger
 
-    case 3 * 414:
+    case 3 * 414, 1080:
         return .BiggerPlus
 
     case 2 * 768, 768:
@@ -49,10 +49,10 @@ private let screenModel: ScreenModel = {
         return .iPad(.Pro)
 
     default:
-        print("Warning: Can NOT detect screenModel!")
+        print("Warning: Can NOT detect screenModel! nativeBounds: \(screen.nativeBounds) nativeScale: \(screen.nativeScale)")
         return .Bigger // Default
     }
-    }()
+}()
 
 public enum Ruler<T> {
 
