@@ -11,8 +11,6 @@ In some cases, we need to distinguish between different devices to set UI, but A
 
 Swift 2.0, iOS 8.0
 
-(Project with Swift 1.2 can still use version 0.5, with slightly different API)
-
 ## Example
 
 If we only consider iPhone's width, iPhone 5 has the same width of iPhone 4s, iPhone 6 has a bigger width, iPhone 6 Plus' width even bigger than iPhone 6. Only three widths.
@@ -95,7 +93,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Ruler', '~> 0.6'
+pod 'Ruler', '~> 0.7.0'
 ```
 
 Then, run the following command:
@@ -120,7 +118,7 @@ $ brew install carthage
 To integrate Ruler into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "nixzhu/Ruler" >= 0.6
+github "nixzhu/Ruler" >= 0.7.0
 ```
 
 Then, run the following command to build the Ruler framework:
