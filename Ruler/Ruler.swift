@@ -98,7 +98,6 @@ public enum Ruler<T> {
         case let .iPad(normal, pro):
             switch screenModel {
             case .iPad(let model):
-
                 switch model {
                 case .Normal:
                     return normal
