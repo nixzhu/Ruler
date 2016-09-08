@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "Ruler"
-  s.version     = "0.7.1"
+  s.version     = "0.8.0"
   s.summary     = "Size matters, you need a ruler."
 
   s.description = <<-DESC
@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.social_media_url  = "https://twitter.com/nixzhu"
 
   s.ios.deployment_target   = "8.0"
-  # s.osx.deployment_target = "10.7"
 
   s.source          = { :git => "https://github.com/nixzhu/Ruler.git", :tag => s.version }
   s.source_files    = "Ruler/*.swift"
