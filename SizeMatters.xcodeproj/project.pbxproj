@@ -12,37 +12,13 @@
 		5044BEC21B5F731400930ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5044BEC01B5F731400930ADC /* Main.storyboard */; };
 		5044BEC41B5F731400930ADC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5044BEC31B5F731400930ADC /* Images.xcassets */; };
 		5044BEC71B5F731400930ADC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5044BEC51B5F731400930ADC /* LaunchScreen.xib */; };
-		5044BED31B5F731500930ADC /* SizeMattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044BED21B5F731500930ADC /* SizeMattersTests.swift */; };
 		5044BEE61B5F73A500930ADC /* Ruler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5044BEE51B5F73A500930ADC /* Ruler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5044BEEC1B5F73A500930ADC /* Ruler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5044BEE11B5F73A500930ADC /* Ruler.framework */; };
-		5044BEF51B5F73A500930ADC /* RulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044BEF41B5F73A500930ADC /* RulerTests.swift */; };
 		5044BEF81B5F73A500930ADC /* Ruler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5044BEE11B5F73A500930ADC /* Ruler.framework */; };
 		5044BEF91B5F73A500930ADC /* Ruler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5044BEE11B5F73A500930ADC /* Ruler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5044BF041B5F890100930ADC /* Ruler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044BF031B5F890100930ADC /* Ruler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5044BECD1B5F731400930ADC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5044BEAF1B5F731400930ADC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5044BEB61B5F731400930ADC;
-			remoteInfo = SizeMatters;
-		};
-		5044BEED1B5F73A500930ADC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5044BEAF1B5F731400930ADC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5044BEE01B5F73A500930ADC;
-			remoteInfo = Ruler;
-		};
-		5044BEEF1B5F73A500930ADC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5044BEAF1B5F731400930ADC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5044BEB61B5F731400930ADC;
-			remoteInfo = SizeMatters;
-		};
 		5044BEF61B5F73A500930ADC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5044BEAF1B5F731400930ADC /* Project object */;
@@ -74,15 +50,9 @@
 		5044BEC11B5F731400930ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5044BEC31B5F731400930ADC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5044BEC61B5F731400930ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5044BECC1B5F731400930ADC /* SizeMattersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizeMattersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5044BED11B5F731500930ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5044BED21B5F731500930ADC /* SizeMattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeMattersTests.swift; sourceTree = "<group>"; };
 		5044BEE11B5F73A500930ADC /* Ruler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ruler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5044BEE41B5F73A500930ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5044BEE51B5F73A500930ADC /* Ruler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ruler.h; sourceTree = "<group>"; };
-		5044BEEB1B5F73A500930ADC /* RulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5044BEF31B5F73A500930ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5044BEF41B5F73A500930ADC /* RulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerTests.swift; sourceTree = "<group>"; };
 		5044BF031B5F890100930ADC /* Ruler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,25 +65,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5044BEC91B5F731400930ADC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5044BEDD1B5F73A500930ADC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5044BEE81B5F73A500930ADC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5044BEEC1B5F73A500930ADC /* Ruler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				5044BEB91B5F731400930ADC /* SizeMatters */,
-				5044BECF1B5F731500930ADC /* SizeMattersTests */,
 				5044BEE21B5F73A500930ADC /* Ruler */,
-				5044BEF11B5F73A500930ADC /* RulerTests */,
 				5044BEB81B5F731400930ADC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,9 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5044BEB71B5F731400930ADC /* SizeMatters.app */,
-				5044BECC1B5F731400930ADC /* SizeMattersTests.xctest */,
 				5044BEE11B5F73A500930ADC /* Ruler.framework */,
-				5044BEEB1B5F73A500930ADC /* RulerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,23 +114,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5044BECF1B5F731500930ADC /* SizeMattersTests */ = {
-			isa = PBXGroup;
-			children = (
-				5044BED21B5F731500930ADC /* SizeMattersTests.swift */,
-				5044BED01B5F731500930ADC /* Supporting Files */,
-			);
-			path = SizeMattersTests;
-			sourceTree = "<group>";
-		};
-		5044BED01B5F731500930ADC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5044BED11B5F731500930ADC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5044BEE21B5F73A500930ADC /* Ruler */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,23 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				5044BEE41B5F73A500930ADC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5044BEF11B5F73A500930ADC /* RulerTests */ = {
-			isa = PBXGroup;
-			children = (
-				5044BEF41B5F73A500930ADC /* RulerTests.swift */,
-				5044BEF21B5F73A500930ADC /* Supporting Files */,
-			);
-			path = RulerTests;
-			sourceTree = "<group>";
-		};
-		5044BEF21B5F73A500930ADC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5044BEF31B5F73A500930ADC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,24 +165,6 @@
 			productReference = 5044BEB71B5F731400930ADC /* SizeMatters.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5044BECB1B5F731400930ADC /* SizeMattersTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5044BED91B5F731500930ADC /* Build configuration list for PBXNativeTarget "SizeMattersTests" */;
-			buildPhases = (
-				5044BEC81B5F731400930ADC /* Sources */,
-				5044BEC91B5F731400930ADC /* Frameworks */,
-				5044BECA1B5F731400930ADC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5044BECE1B5F731400930ADC /* PBXTargetDependency */,
-			);
-			name = SizeMattersTests;
-			productName = SizeMattersTests;
-			productReference = 5044BECC1B5F731400930ADC /* SizeMattersTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5044BEE01B5F73A500930ADC /* Ruler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5044BEFE1B5F73A500930ADC /* Build configuration list for PBXNativeTarget "Ruler" */;
@@ -284,25 +183,6 @@
 			productReference = 5044BEE11B5F73A500930ADC /* Ruler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5044BEEA1B5F73A500930ADC /* RulerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5044BF001B5F73A500930ADC /* Build configuration list for PBXNativeTarget "RulerTests" */;
-			buildPhases = (
-				5044BEE71B5F73A500930ADC /* Sources */,
-				5044BEE81B5F73A500930ADC /* Frameworks */,
-				5044BEE91B5F73A500930ADC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5044BEEE1B5F73A500930ADC /* PBXTargetDependency */,
-				5044BEF01B5F73A500930ADC /* PBXTargetDependency */,
-			);
-			name = RulerTests;
-			productName = RulerTests;
-			productReference = 5044BEEB1B5F73A500930ADC /* RulerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,22 +191,17 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = nixWork;
 				TargetAttributes = {
 					5044BEB61B5F731400930ADC = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					5044BECB1B5F731400930ADC = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 5044BEB61B5F731400930ADC;
+						DevelopmentTeam = 8D957V42M6;
+						LastSwiftMigration = 0800;
 					};
 					5044BEE01B5F73A500930ADC = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					5044BEEA1B5F73A500930ADC = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 5044BEB61B5F731400930ADC;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -344,9 +219,7 @@
 			projectRoot = "";
 			targets = (
 				5044BEB61B5F731400930ADC /* SizeMatters */,
-				5044BECB1B5F731400930ADC /* SizeMattersTests */,
 				5044BEE01B5F73A500930ADC /* Ruler */,
-				5044BEEA1B5F73A500930ADC /* RulerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,21 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5044BECA1B5F731400930ADC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5044BEDF1B5F73A500930ADC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5044BEE91B5F73A500930ADC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,14 +254,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5044BEC81B5F731400930ADC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5044BED31B5F731500930ADC /* SizeMattersTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5044BEDC1B5F73A500930ADC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,32 +262,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5044BEE71B5F73A500930ADC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5044BEF51B5F73A500930ADC /* RulerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5044BECE1B5F731400930ADC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5044BEB61B5F731400930ADC /* SizeMatters */;
-			targetProxy = 5044BECD1B5F731400930ADC /* PBXContainerItemProxy */;
-		};
-		5044BEEE1B5F73A500930ADC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5044BEE01B5F73A500930ADC /* Ruler */;
-			targetProxy = 5044BEED1B5F73A500930ADC /* PBXContainerItemProxy */;
-		};
-		5044BEF01B5F73A500930ADC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5044BEB61B5F731400930ADC /* SizeMatters */;
-			targetProxy = 5044BEEF1B5F73A500930ADC /* PBXContainerItemProxy */;
-		};
 		5044BEF71B5F73A500930ADC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5044BEE01B5F73A500930ADC /* Ruler */;
@@ -477,8 +305,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -523,8 +353,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -543,6 +375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -552,11 +385,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D957V42M6;
 				INFOPLIST_FILE = SizeMatters/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -564,41 +399,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D957V42M6;
 				INFOPLIST_FILE = SizeMatters/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5044BEDA1B5F731500930ADC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SizeMattersTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SizeMatters.app/SizeMatters";
-			};
-			name = Debug;
-		};
-		5044BEDB1B5F731500930ADC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = SizeMattersTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SizeMatters.app/SizeMatters";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -607,6 +414,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -624,6 +432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -634,6 +443,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -646,38 +456,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5044BEFC1B5F73A500930ADC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RulerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SizeMatters.app/SizeMatters";
-			};
-			name = Debug;
-		};
-		5044BEFD1B5F73A500930ADC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = RulerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nixWork.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SizeMatters.app/SizeMatters";
 			};
 			name = Release;
 		};
@@ -702,29 +483,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5044BED91B5F731500930ADC /* Build configuration list for PBXNativeTarget "SizeMattersTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5044BEDA1B5F731500930ADC /* Debug */,
-				5044BEDB1B5F731500930ADC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5044BEFE1B5F73A500930ADC /* Build configuration list for PBXNativeTarget "Ruler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5044BEFA1B5F73A500930ADC /* Debug */,
 				5044BEFB1B5F73A500930ADC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5044BF001B5F73A500930ADC /* Build configuration list for PBXNativeTarget "RulerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5044BEFC1B5F73A500930ADC /* Debug */,
-				5044BEFD1B5F73A500930ADC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
