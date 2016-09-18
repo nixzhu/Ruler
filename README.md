@@ -9,7 +9,9 @@ In some cases, we need to distinguish between different devices to set UI, but A
 
 ## Requirements
 
-Swift 2.3, iOS 8.0
+Swift 3.0, iOS 8.0
+
+(Swift 2.3, use version 0.8.0)
 
 ## Example
 
@@ -26,8 +28,8 @@ enum Ruler<T> {
     case iPhoneHorizontal(T, T, T)
     case iPhoneVertical(T, T, T, T)
     case iPad(T, T)
-    case UniversalHorizontal(T, T, T, T, T)
-    case UniversalVertical(T, T, T, T, T, T)
+    case universalHorizontal(T, T, T, T, T)
+    case universalVertical(T, T, T, T, T, T)
     
 	//...
 }
@@ -47,13 +49,13 @@ let height = Ruler.iPhoneVertical(5, 10, 20, 30).value
 
 // or color
 
-colorView.backgroundColor = Ruler.UniversalVertical(UIColor.blackColor(), UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.yellowColor(), UIColor.purpleColor()).value
+colorView.backgroundColor = Ruler.universalVertical(UIColor.blackColor(), UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.yellowColor(), UIColor.purpleColor()).value
 
 // even closures
 
 typealias Greeting = () -> Void
 
-let greeting: Greeting = Ruler.UniversalVertical({
+let greeting: Greeting = Ruler.universalVertical({
         print("Hello!")
     }, {
         print("Hi!")
@@ -74,21 +76,21 @@ greeting()
 
 ## Installation
 
-Feel free to drag `Ruler.swift` to your iOS Project. But it's recommended to use CocoaPods or Carthage.
-
-### CocoaPods
-
-```ruby
-pod 'Ruler', '~> 0.8.0'
-```
+Feel free to drag `Ruler.swift` to your iOS Project. But it's recommended to use Carthage (or CocoaPods).
 
 ### Carthage
 
 ```ogdl
-github "nixzhu/Ruler" >= 0.8.0
+github "nixzhu/Ruler" >= 1.0.0
 ```
 
-## Contact
+#### CocoaPods
+
+```ruby
+pod 'Ruler', '~> 1.0.0'
+```
+
+# Contact
 
 NIX [@nixzhu](https://twitter.com/nixzhu)
 

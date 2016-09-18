@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "Ruler"
-  s.version     = "0.8.0"
+  s.version     = "1.0.0"
   s.summary     = "Size matters, you need a ruler."
 
   s.description = <<-DESC
