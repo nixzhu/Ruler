@@ -81,13 +81,13 @@ Feel free to drag `Ruler.swift` to your iOS Project. But it's recommended to use
 ### Carthage
 
 ```ogdl
-github "nixzhu/Ruler" >= 1.0.0
+github "nixzhu/Ruler"
 ```
 
 #### CocoaPods
 
 ```ruby
-pod 'Ruler', '~> 1.0.0'
+pod 'Ruler'
 ```
 
 # Contact
