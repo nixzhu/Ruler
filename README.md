@@ -9,9 +9,9 @@ In some cases, we need to distinguish between different devices to set UI, but A
 
 ## Requirements
 
-Swift 3.0, iOS 8.0
+Swift 4, iOS 8.0
 
-(Swift 2.3, use version 0.8.0)
+(Swift 3, use version 1.0.1)
 
 ## Example
 
