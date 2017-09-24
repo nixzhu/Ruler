@@ -22,14 +22,14 @@ class ViewController: UIViewController {
         // set some constraints
 
         leftMargin.constant = Ruler.universalHorizontal(0, 20, 40, 60, 80).value
-        topMargin.constant = Ruler.universalVertical(0, 20, 40, 60, 80, 100).value
+        topMargin.constant = Ruler.universalVertical(0, 20, 40, 60, 70, 80, 100).value
 
         // other test
 
         let width = Ruler.iPhoneHorizontal(10, 20, 30).value
         print("width = \(width)\n")
 
-        let height = Ruler.iPhoneVertical(5, 10, 20, 30).value
+        let height = Ruler.iPhoneVertical(5, 10, 20, 30, 40).value
         print("height = \(height)\n")
 
         let iPadWidthOrHeight = Ruler.iPad(20, 50).value
@@ -38,30 +38,24 @@ class ViewController: UIViewController {
         let universalWidth = Ruler.universalHorizontal(10, 20, 30, 40, 60).value
         print("universalWidth = \(universalWidth)\n")
 
-        let universalHeight = Ruler.universalVertical(5, 10, 20, 30, 40, 60).value
+        let universalHeight = Ruler.universalVertical(5, 10, 20, 30, 40, 50, 60).value
         print("universalHeight = \(universalHeight)\n")
 
         // thanks generics, Ruler can match anything for different sizes of iOS devices, not just the length!
 
-        colorView.backgroundColor = Ruler.universalVertical(UIColor.black, UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.purple).value
+        colorView.backgroundColor = Ruler.universalVertical(UIColor.black, UIColor.red, UIColor.blue, UIColor.green, UIColor.yellow, UIColor.purple, UIColor.cyan).value
 
         typealias Greeting = () -> Void
 
-        let greeting: Greeting = Ruler.universalVertical({
-                print("Hello!")
-            }, {
-                print("Hi!")
-            }, {
-                print("How are you!")
-            }, {
-                print("How do you do!")
-            }, {
-                print("好久不见！")
-            }, {
-                print("你好！")
-        }).value
+        let greeting: Greeting = Ruler.universalVertical(
+        { print("Hello!") },
+        { print("Hi!") },
+        { print("How are you!") },
+        { print("How do you do!") },
+        { print("好久不见！") },
+        { print("你好！") },
+        { print("很高兴见到你！") }).value
 
         greeting()
     }
 }
-
