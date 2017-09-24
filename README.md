@@ -30,8 +30,6 @@ enum Ruler<T> {
     case iPad(T, T)
     case universalHorizontal(T, T, T, T, T)
     case universalVertical(T, T, T, T, T, T, T)
-    
-	//...
 }
 ```
 
