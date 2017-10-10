@@ -68,6 +68,8 @@ public enum Ruler<T> {
                 return bigger
             case .biggerPlus:
                 return biggerPlus
+            case .x:
+                return bigger
             default:
                 return biggerPlus
             }
