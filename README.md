@@ -67,6 +67,16 @@ greeting()
 // ...
 ```
 
+### Special offer
+
+Detect if this device is an iPhone X:
+
+``` swift
+if ScreenModel.isPhoneX {
+    print("It's an iPhone X. You're rich!")
+}
+```
+
 ## Installation
 
 Feel free to drag `Ruler.swift` to your iOS Project. But it's recommended to use Carthage (or CocoaPods).

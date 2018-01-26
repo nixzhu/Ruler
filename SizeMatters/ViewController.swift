@@ -57,5 +57,9 @@ class ViewController: UIViewController {
         { print("很高兴见到你！") }).value
 
         greeting()
+
+        if ScreenModel.isPhoneX {
+            print("It's an iPhone X. You're rich!")
+        }
     }
 }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-private enum ScreenModel {
+public enum ScreenModel {
 
-    enum ClassicModel {
+    public enum ClassicModel {
         case inch35
         case inch4
     }
@@ -19,7 +19,7 @@ private enum ScreenModel {
     case biggerPlus
     case x
 
-    enum PadModel {
+    public enum PadModel {
         case normal
         case pro
     }
@@ -144,6 +144,18 @@ public enum Ruler<T> {
                     return iPadPro
                 }
             }
+        }
+    }
+}
+
+extension ScreenModel {
+
+    public static var isPhoneX: Bool {
+        switch screenModel {
+        case .x:
+            return true
+        default:
+            return false
         }
     }
 }
