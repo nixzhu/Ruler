@@ -42,7 +42,7 @@ private let screenModel: ScreenModel = {
         return .x
     case 1024:
         return .iPad(.normal)
-    case 1366:
+    case 1112, 1366:
         return .iPad(.pro)
     default:
         print("Warning: Can NOT detect screenModel! bounds: \(screen.bounds) nativeScale: \(screen.nativeScale)")
