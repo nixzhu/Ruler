@@ -21,6 +21,5 @@ Pod::Spec.new do |s|
   s.source          = { :git => "https://github.com/nixzhu/Ruler.git", :tag => s.version }
   s.source_files    = "Ruler/*.swift"
   s.requires_arc    = true
-  s.static_framework = true
 
 end
